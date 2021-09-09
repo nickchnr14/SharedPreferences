@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   MOBILE :"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/mobileNumberEditText"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="top"
+                android:hint="ENTER"
+                android:maxLength="10"
+                android:inputType="number"
+                android:textFontWeight="1"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADDRESS :"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                >
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="202dp"
+                android:layout_height="152dp"
+                android:background="@drawable/addressborder">
+
+                <EditText
+                    android:id="@+id/addressEditText"
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="top"
+                    android:hint="ENTER"
+                    android:inputType="textMultiLine"
+                    android:maxWidth="150dp"
+                    android:maxHeight="150dp"
+                    android:maxLines="6"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/RegisterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/black"
+            android:onClick="registerUser"
+            android:text="REGISTER">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
